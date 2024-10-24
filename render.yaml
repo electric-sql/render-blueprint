@@ -19,8 +19,8 @@ services:
     runtime: static
     name: app
     repo: https://github.com/electric-sql/standalone-basic-example
-    buildCommand: VITE_ELECTRIC_URL="https://${ELECTRIC_HOST}" npm run build
-    staticPublishPath: ./dist
+    buildCommand: VITE_ELECTRIC_URL="https://${ELECTRIC_HOST}.onrender.com" npm run build
+    staticPublishPath: dist
     envVars:
       - key: ELECTRIC_HOST
         fromService:
