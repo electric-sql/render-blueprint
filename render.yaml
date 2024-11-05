@@ -12,7 +12,7 @@ services:
     envVars:
       - key: DATABASE_URL
         sync: false
-      - key: STORAGE_DIR
+      - key: ELECTRIC_STORAGE_DIR
         value: "/var/electric"
   # Your app
   - type: web
